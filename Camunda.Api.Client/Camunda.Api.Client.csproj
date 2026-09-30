@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <TargetFrameworks>net472;net8.0</TargetFrameworks>
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
     <VersionSuffix></VersionSuffix>
-    <VersionPrefix>2.6.0</VersionPrefix>
-    <FileVersion>2.6.0.0</FileVersion>
+    <VersionPrefix>3.0.0</VersionPrefix>
+    <FileVersion>3.0.0.0</FileVersion>
     <Product>Camunda REST API Client</Product>
     <Title>Camunda REST API Client</Title>
     <Authors>Jan Lucansky</Authors>
@@ -17,7 +17,7 @@
     <PackageReleaseNotes></PackageReleaseNotes>
     <RepositoryType></RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <NoWarn>1701;1702;1705;1591;8002</NoWarn>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <!-- Don't increment AssemblyVersion -->
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -26,8 +26,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Refit" Version="5.0.23" />
-    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Refit" Version="16.3.0" />
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="16.3.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 # Camunda REST API Client [![Build status](https://ci.appveyor.com/api/projects/status/l2ct8th9hwuwlqvf?svg=true)](https://ci.appveyor.com/project/jlucansky/camunda-api-client) [![NuGet](https://img.shields.io/nuget/v/Camunda.Api.Client.svg)](https://www.nuget.org/packages/Camunda.Api.Client)
 Camunda REST API Client for .NET platform
-- [x] .NET Framework 4.6.1
-- [x] .NET Standard 2.0
+- [x] .NET Framework 4.7.2
+- [x] .NET 8.0
 
 ## Covered API
 Each part listed below is fully covered according to https://docs.camunda.org/manual/latest/reference/rest specification.

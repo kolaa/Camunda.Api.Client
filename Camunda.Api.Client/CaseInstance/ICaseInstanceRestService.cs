@@ -27,7 +27,7 @@ namespace Camunda.Api.Client.CaseInstance
         [Put("/case-instance/{id}/variables/{varName}")]
         Task UpdateVariable(string id, string varName, [Body] VariableValue value);
 
-        [Post("/case-instance/{id}/variables/{varName}/data")]
+        [Post("/case-instance/{id}/variables/{varName}/data"), Multipart]
         Task SetBinaryVariable(string id, string varName, BinaryDataContent data, ValueTypeContent valueType);
 
         [Delete("/case-instance/{id}/variables/{varName}")]

@@ -44,6 +44,7 @@ namespace Camunda.Api.Client.Filter
         /// </summary>
         /// <param name="firstResult"></param>
         /// <param name="maxResults"></param>
+        /// <param name="query"></param>
         /// <returns></returns>
         public Task<List<UserTaskInfo>> ExecuteList(int firstResult, int maxResults, TaskQuery query = null) => _api.ExecuteList(_filterId, firstResult, maxResults, query);
 
